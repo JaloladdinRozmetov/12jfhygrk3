@@ -1,18 +1,16 @@
 <?php
 
-namespace migrations;
-
 use yii\db\Migration;
 
 /**
  * Handles the creation of table `{{%story}}`.
  */
-class m251106_185835_create_story_table extends Migration
+class m251107_092550_create_story_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
-    public function safeUp(): void
+    public function safeUp()
     {
         $this->createTable('{{%story}}', [
             'id' => $this->primaryKey(),
@@ -30,7 +28,7 @@ class m251106_185835_create_story_table extends Migration
     /**
      * {@inheritdoc}
      */
-    public function safeDown(): void
+    public function safeDown()
     {
         $this->dropTable('{{%story}}');
     }
